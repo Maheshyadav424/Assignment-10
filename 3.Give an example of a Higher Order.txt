@@ -1,0 +1,48 @@
+3.Give an example of a Higher Order function and a call back function
+used in the same program.
+
+ANS:
+
+EX:
+// Higher-order function
+
+function performOperationOnArray(arr, callback) {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i]));
+  }
+  return result;
+}
+
+
+
+// Callback function to square a number
+
+function square(num) {
+  return num * num;
+}
+
+
+
+
+// Callback function to calculate the length of a string
+function stringLength(str) {
+  return str.length;
+}
+
+const numbers = [1, 2, 3, 4, 5];
+const strings = ["hello", "world", "javascript"];
+
+
+                                            // Using the higher-order function with the square callback
+const squaredNumbers = performOperationOnArray(numbers, square);
+console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+
+                                               // Using the higher-order function with the stringLength callback
+const lengthsOfStrings = performOperationOnArray(strings, stringLength);
+console.log(lengthsOfStrings);
+
+
+
+
+ Output: [5, 5, 10]

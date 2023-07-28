@@ -1,0 +1,19 @@
+2.Is filter a Higher Order function in Javascript ? If yes, why ?
+
+ANS:
+ filter is a higher-order function in JavaScript.
+
+ FILTER FUNCTION:
+array.filter(callback(element[, index[, array]])[, thisArg])
+
+
+EX:
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// Filtering even numbers
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers); 
+
+
+Output: [2, 4, 6]

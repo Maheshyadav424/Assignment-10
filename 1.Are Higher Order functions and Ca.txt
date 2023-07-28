@@ -1,0 +1,7 @@
+1.Are Higher Order functions and Call back functions the same ? If not,
+briefly explain about both functions.
+
+ANS:
+Higher-order functions and callback functions are related concepts, but they are not the same.
+
+higher-order functions and callback functions are both important concepts in JavaScript. Higher-order functions are functions that accept or return other functions, while callback functions are functions that are passed as arguments to other functions and are executed at a later time or under specific conditions. Callback functions are often used as a way to provide custom behavior to higher-order functions, making code more flexible and adaptable.
